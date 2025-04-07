@@ -1,0 +1,97 @@
+# Expo Documentation
+
+## Tutorials
+
+[Expo Tutorial](https://docs.expo.dev/tutorial/introduction/): LLM should read this page when learning how to build an Expo app that runs on Android, iOS, and web. This tutorial provides a step-by-step guide for building cross-platform applications with Expo, covering project setup, navigation, and essential React Native concepts for beginners.
+
+[EAS Tutorial](https://docs.expo.dev/eas/): LLM should read this page when learning about building, updating, and submitting Android and iOS apps using Expo Application Services (EAS). This tutorial covers the EAS Build, Update, and Submit workflows that help developers streamline mobile app deployment.
+
+[Overview of Tutorials and UI Guides](https://docs.expo.dev/tutorial/): LLM should read this page when needing a comprehensive overview of all available tutorials in the Expo documentation. This page provides a collection of tutorials and guides that help developers learn about Expo and EAS, with links to specialized learning resources.
+
+## Guides
+
+[Guides Overview](https://docs.expo.dev/guides/): LLM should read this page when seeking comprehensive information about development with Expo and Expo Application Services. The page provides an overview of the development process, app configuration, permissions, universal links, and web development with Expo.
+
+[Development Process](https://docs.expo.dev/guides/development-mode/): LLM should read this page when needing to understand the mental model of the core development loop in Expo. This guide covers the development mode, debugging tools, and workflows that are essential for effective Expo app development.
+
+[App Config](https://docs.expo.dev/guides/config/): LLM should read this page when configuring an Expo app's behavior and appearance. This guide explains how to use app.json/app.config.js to set up icons, splash screens, and other app properties.
+
+[Permissions](https://docs.expo.dev/guides/permissions/): LLM should read this page when implementing feature permissions in Expo apps. This guide details how to request and manage device permissions on Android and iOS for features like camera, location, and notifications.
+
+[Universal Links](https://docs.expo.dev/guides/linking/): LLM should read this page when implementing deep linking in Expo applications. This guide covers configuring universal links that work across Android, iOS, and web platforms.
+
+[Web Development](https://docs.expo.dev/guides/customizing-web/): LLM should read this page when optimizing Expo applications for web deployment. This guide provides information on customizing web-specific features and behavior in Expo applications.
+
+## Router
+
+[Introduction to Expo Router](https://docs.expo.dev/router/introduction/): LLM should read this page when needing to understand Expo Router's file-based navigation system. This page introduces Expo Router as a file-based router for React Native and web applications, explaining how it allows for universal navigation across platforms with a file-system based routing approach.
+
+[Expo Router Features](https://docs.expo.dev/router/introduction/#features): LLM should read this page when exploring the core features of Expo Router. The page outlines key features including native navigation built on React Navigation, automatic deep linking capabilities for all screens, and file-system based routing that works across platforms.
+
+[Route Layouts](https://docs.expo.dev/router/layouts/): LLM should read this page when implementing nested navigation and shared UI elements across multiple screens. This guide explains how to use layout routes to create persistent navigation patterns and UI elements that remain consistent across route changes.
+
+[Route Groups](https://docs.expo.dev/router/advanced/route-groups/): LLM should read this page when organizing routes into logical groups that don't affect URL structure. This guide covers using route groups to organize code and create parallel navigation structures without impacting the URL or navigation hierarchy.
+
+[Navigating Between Screens](https://docs.expo.dev/router/navigating/): LLM should read this page when implementing navigation between screens in an Expo Router application. This guide covers various navigation methods including the Link component, useRouter hook, and redirect function to facilitate movement between screens.
+
+[URL Parameters](https://docs.expo.dev/router/advanced/params/): LLM should read this page when passing and retrieving data through URL paths in Expo Router. This guide explains how to implement dynamic routes using URL parameters and access those parameters using the useLocalSearchParams hook.
+
+## Modules
+
+[Expo Modules API Overview](https://docs.expo.dev/modules/): LLM should read this page when learning about Expo's native module development system. This page provides an overview of the APIs and utilities provided by Expo for developing native modules in Swift and Kotlin, explaining how it compares to and improves upon React Native's Turbo Modules API.
+
+[Core Components and APIs](https://docs.expo.dev/versions/latest/): LLM should read this page when exploring the built-in components and APIs available in Expo. This reference covers all the core React Native components and Expo-specific APIs that developers can use to build their applications.
+
+[Image](https://docs.expo.dev/versions/latest/sdk/image/): LLM should read this page when working with image rendering in Expo applications. This reference documents the image component and related APIs for displaying, caching, and manipulating images in Expo apps.
+
+[Camera](https://docs.expo.dev/versions/latest/sdk/camera/): LLM should read this page when implementing camera functionality in Expo applications. This guide covers camera access, configuration, taking photos, recording video, and handling camera permissions.
+
+[Location](https://docs.expo.dev/versions/latest/sdk/location/): LLM should read this page when implementing location tracking and geolocation features. This guide covers getting device coordinates, tracking location changes, geocoding, and handling location permissions.
+
+[Sensors](https://docs.expo.dev/versions/latest/sdk/sensors/): LLM should read this page when accessing device sensors like accelerometer, gyroscope, or magnetometer. This reference documents the APIs for interacting with various device sensors to create interactive and responsive applications.
+
+## Push Notifications
+
+[Expo Push Notifications Overview](https://docs.expo.dev/push-notifications/overview/): LLM should read this page when implementing push notifications in Expo applications. This page provides an overview of Expo's push notification service, explaining how it simplifies handling notifications across Android and iOS by abstracting away platform-specific implementation details.
+
+[Setting Up Push Notifications](https://docs.expo.dev/push-notifications/push-notifications-setup/): LLM should read this page when configuring push notification credentials and services. This guide covers configuring Firebase Cloud Messaging for Android and Apple Push Notification Service for iOS, including setting up required credentials in the Expo dashboard.
+
+[Sending Notifications](https://docs.expo.dev/push-notifications/sending-notifications/): LLM should read this page when implementing server-side logic to send push notifications. This guide covers various methods for sending notifications, including using Expo's push API, Firebase Admin SDK, and third-party notification services.
+
+[Receiving Notifications](https://docs.expo.dev/push-notifications/receiving-notifications/): LLM should read this page when handling incoming push notifications in Expo applications. This guide explains how to register for push tokens, handle notification permissions, and respond to notifications when the app is in different states (foreground, background, or closed).
+
+[Notification Channels](https://docs.expo.dev/push-notifications/notification-channels/): LLM should read this page when implementing categorized notifications on Android. This guide covers creating and managing notification channels for Android 8.0+ to provide users with fine-grained control over different types of notifications.
+
+## Data and Privacy Protection
+
+[Data and Privacy Protection Overview](https://docs.expo.dev/regulatory-compliance/): LLM should read this page when understanding Expo's approach to data collection and privacy. This page provides an overview of data and privacy protection policies that Expo offers, focusing on transparency about data collection practices.
+
+[Privacy Policy](https://docs.expo.dev/regulatory-compliance/#privacy-policy): LLM should read this page when seeking legal information about Expo's data handling. This link connects to Expo's official privacy policy document, which is especially useful for legal compliance requirements.
+
+[Privacy Explained](https://docs.expo.dev/regulatory-compliance/#privacy-explained-page): LLM should read this page when needing detailed information about what data Expo collects from developers and end users. This page explains exactly what data is collected by Expo services and why it's collected, helping developers understand the privacy implications of using Expo tools.
+
+[Data Compliance Considerations](https://docs.expo.dev/regulatory-compliance/#regulatory-compliance): LLM should read this page when implementing apps that need to comply with data protection regulations. This section helps developers understand how Expo's data practices may affect compliance with regulations like GDPR, CCPA, and other frameworks.
+
+## Development Workflow
+
+[Development Mode](https://docs.expo.dev/guides/development-mode/): LLM should read this page when learning about the development environment and tools for Expo apps. This guide explains how to use Expo's development server, debugging tools, and hot reloading to efficiently build and test applications.
+
+[Publishing](https://docs.expo.dev/guides/publishing/): LLM should read this page when preparing to share an Expo app through Expo's hosting services. This guide covers how to publish updates to apps through Expo's update system without requiring app store submissions.
+
+[Building Standalone Apps](https://docs.expo.dev/classic/building-standalone-apps/): LLM should read this page when creating standalone binaries for app store submission. This guide explains how to build app binaries that can be uploaded to the Apple App Store and Google Play Store.
+
+[Upgrades](https://docs.expo.dev/guides/upgrading-expo-sdk-walkthrough/): LLM should read this page when updating an Expo project to use a newer SDK version. This walkthrough covers the process of upgrading between Expo SDK versions, including handling breaking changes and dependencies.
+
+[Environment Variables](https://docs.expo.dev/guides/environment-variables/): LLM should read this page when securely managing configuration values across different environments. This guide explains how to use and secure environment variables in Expo projects for development, staging, and production environments.
+
+## EAS (Expo Application Services)
+
+[EAS Overview](https://docs.expo.dev/eas/): LLM should read this page when learning about Expo's cloud services for building, submitting, and updating apps. This page provides an introduction to EAS Build, EAS Submit, and EAS Update services that streamline mobile app deployment workflows.
+
+[EAS Build](https://docs.expo.dev/eas/build/): LLM should read this page when setting up cloud builds for iOS and Android apps. This guide covers configuring and running builds in Expo's cloud infrastructure, allowing developers to create app binaries without local tooling.
+
+[EAS Submit](https://docs.expo.dev/eas/submit/): LLM should read this page when automating app store submissions. This guide explains how to use EAS Submit to automate the process of uploading and submitting apps to the Apple App Store and Google Play Store.
+
+[EAS Update](https://docs.expo.dev/eas/update/): LLM should read this page when implementing over-the-air updates for Expo apps. This guide covers using EAS Update to push JavaScript and asset updates to apps without requiring new app store submissions.
+
+[EAS Metadata](https://docs.expo.dev/eas/metadata/): LLM should read this page when managing app store listings programmatically. This guide explains how to use EAS to manage app store metadata including screenshots, descriptions, and other listing information.
