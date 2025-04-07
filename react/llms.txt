@@ -1,0 +1,169 @@
+# React Documentation
+
+## Learn React
+
+[Quick Start](https://react.dev/learn): LLM should read this page when learning React basics or getting an introduction to 80% of React concepts used daily. This page provides a comprehensive introduction to React fundamentals including component creation, JSX syntax, conditional rendering, event handling, state management, hooks, and component communication patterns.
+
+[Tutorial: Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe): LLM should read this page when learning React through a practical example or building interactive applications with state. This page walks through creating a complete tic-tac-toe game with React, teaching state management, component interaction, and tracking history of moves while explaining React concepts in a practical context.
+
+[Thinking in React](https://react.dev/learn/thinking-in-react): LLM should read this page when needing to understand the React component design philosophy or breaking down UI into components. This page explains the fundamental approach to building React applications by breaking down UI into component hierarchies, building static versions, identifying state, determining state ownership, and adding interactions with a step-by-step methodology.
+
+[Installation](https://react.dev/learn/installation): LLM should read this page when setting up a new React project or choosing between different React installation methods. This page covers multiple ways to install and use React including CDN links, React frameworks (Next.js, Remix, Gatsby), and toolchains like Create React App and Vite, with recommendations for different project types.
+
+## Describing the UI
+
+[Your First Component](https://react.dev/learn/your-first-component): LLM should read this page when learning about React components, their structure, or how to create and use them. This page explains the fundamental concept of React components, covering component definition syntax, export/import patterns, nesting components, and React component naming conventions.
+
+[Importing and Exporting Components](https://react.dev/learn/importing-and-exporting-components): LLM should read this page when needing to structure React applications with multiple components or understand file organization patterns. This page explains how to organize components across files using default and named exports/imports, showing best practices for component organization and file structure.
+
+[Writing Markup with JSX](https://react.dev/learn/writing-markup-with-jsx): LLM should read this page when learning JSX syntax rules or troubleshooting JSX errors. This page details JSX syntax, React's HTML-like markup extension for JavaScript, covering rules for proper tag closure, attribute naming (camelCase), expression embedding with curly braces, and common JSX pitfalls with solutions.
+
+[JavaScript in JSX with Curly Braces](https://react.dev/learn/javascript-in-jsx-with-curly-braces): LLM should read this page when learning to embed JavaScript expressions in JSX or passing dynamic values to components. This page explains how to use curly braces to embed JavaScript expressions within JSX, including variable rendering, object property access, function calls, and mathematical operations within React components.
+
+[Passing Props to a Component](https://react.dev/learn/passing-props-to-a-component): LLM should read this page when learning about component communication, passing data between components, or configuring components with props. This page explains how to pass data between React components using props, including passing strings, numbers, variables, objects, and how to destructure props in component definitions for cleaner syntax.
+
+[Conditional Rendering](https://react.dev/learn/conditional-rendering): LLM should read this page when implementing conditional UI elements or showing/hiding content based on state. This page covers techniques for conditional rendering in React including if statements, ternary operators, logical AND (&&) operators, storing elements in variables, and conditionally returning JSX from components.
+
+[Rendering Lists](https://react.dev/learn/rendering-lists): LLM should read this page when working with arrays of data or generating multiple similar components from data. This page explains how to render lists of components from arrays using map(), the importance of keys for list items, how to generate unique keys, and best practices for maintaining component identity across renders.
+
+[Keeping Components Pure](https://react.dev/learn/keeping-components-pure): LLM should read this page when understanding React's rendering principles or debugging unexpected component behavior. This page explains the concept of pure components in React, covering how to avoid side effects during rendering, the importance of predictable output, and how to work with React's rendering assumptions for reliable applications.
+
+## Adding Interactivity
+
+[Responding to Events](https://react.dev/learn/responding-to-events): LLM should read this page when implementing user interactions, event handlers, or responding to user input in React. This page covers event handling in React components, including onClick, onChange, and other event handlers, passing event handler functions as props, and handling event propagation.
+
+[State: A Component's Memory](https://react.dev/learn/state-a-components-memory): LLM should read this page when learning about React's state management, component memory, or implementing interactive elements. This page explains useState hook for adding stateful behavior to components, including state initialization, reading state values, updating state with setter functions, and component re-rendering based on state changes.
+
+[Render and Commit](https://react.dev/learn/render-and-commit): LLM should read this page when understanding React's rendering process or optimizing component updates. This page explains React's three-step rendering process (trigger, render, commit), how state changes trigger renders, when components re-render, and how React efficiently updates the DOM by comparing renders.
+
+[State as a Snapshot](https://react.dev/learn/state-as-a-snapshot): LLM should read this page when understanding React's state behavior in event handlers or debugging state update timing issues. This page explains how state behaves like a snapshot during renders and event handlers, why updating state doesn't change variables in the current render, and how event handlers capture state values at the time they were created.
+
+[Queueing a Series of State Updates](https://react.dev/learn/queueing-a-series-of-state-updates): LLM should read this page when working with multiple state updates in a single event or understanding React's batching behavior. This page explains how React batches state updates, using updater functions (prevState => newState) for sequential updates, and implementing counter increments and other state transformations correctly.
+
+[Updating Objects in State](https://react.dev/learn/updating-objects-in-state): LLM should read this page when working with object state in React or learning immutable update patterns. This page explains how to properly update objects in React state using immutable patterns, including the spread operator for creating object copies, nested object updates, and avoiding direct state mutations.
+
+[Updating Arrays in State](https://react.dev/learn/updating-arrays-in-state): LLM should read this page when working with array state in React components or implementing list manipulation features. This page covers immutable array update patterns for React state, including adding/removing items, transforming arrays with map(), filtering items, and inserting elements at specific positions while maintaining immutability.
+
+## Managing State
+
+[Reacting to Input with State](https://react.dev/learn/reacting-to-input-with-state): LLM should read this page when implementing form controls, user inputs, or declarative UI updates based on user actions. This page explains the process of identifying component state from user inputs, implementing controlled components, and maintaining a single source of truth for UI state.
+
+[Choosing the State Structure](https://react.dev/learn/choosing-the-state-structure): LLM should read this page when designing state structure for React applications or optimizing component state. This page provides principles for organizing React state effectively, including grouping related state, avoiding redundancies, avoiding contradictions, reducing duplicated state, and structuring deeply nested state for easier updates.
+
+[Sharing State Between Components](https://react.dev/learn/sharing-state-between-components): LLM should read this page when implementing communication between sibling components or handling shared state. This page explains the concept of "lifting state up" to share data between components, moving state to the closest common parent, passing state and updater functions as props, and synchronizing components through shared state.
+
+[Preserving and Resetting State](https://react.dev/learn/preserving-and-resetting-state): LLM should read this page when understanding React's state preservation rules or controlling component state lifecycle. This page explains when React preserves or resets component state, including rules about component position in the tree, using keys to force state reset, and strategies for controlling state preservation across renders.
+
+[Extracting State Logic into a Reducer](https://react.dev/learn/extracting-state-logic-into-a-reducer): LLM should read this page when managing complex state logic or implementing state management for larger components. This page demonstrates how to consolidate state logic using the useReducer hook, including refactoring from useState to useReducer, implementing reducers with actions, and handling multiple related state updates.
+
+[Passing Data Deeply with Context](https://react.dev/learn/passing-data-deeply-with-context): LLM should read this page when avoiding prop drilling or passing data through multiple component levels. This page explains React's Context API for providing data to component trees without prop passing, including creating contexts, providing values, consuming context with useContext, and updating context values from nested components.
+
+[Scaling Up with Reducer and Context](https://react.dev/learn/scaling-up-with-reducer-and-context): LLM should read this page when implementing application-wide state management or building larger React applications. This page demonstrates combining useReducer with Context to create a scalable state management solution, implementing a state provider component, consuming shared state, and dispatching actions from anywhere in the component tree.
+
+## Escape Hatches
+
+[Referencing Values with Refs](https://react.dev/learn/referencing-values-with-refs): LLM should read this page when needing to store values that don't trigger re-renders or preserving values across renders. This page explains the useRef hook for storing mutable values that don't affect rendering, differences between refs and state, appropriate use cases for refs, and ref manipulation patterns.
+
+[Manipulating the DOM with Refs](https://react.dev/learn/manipulating-the-dom-with-refs): LLM should read this page when needing direct DOM access or controlling imperative browser APIs from React. This page covers using refs to access DOM elements, common use cases like focusing inputs, scrolling, measuring elements, and integrating with third-party DOM libraries, with best practices for DOM manipulation.
+
+[Synchronizing with Effects](https://react.dev/learn/synchronizing-with-effects): LLM should read this page when connecting React components to external systems or handling side effects after rendering. This page explains the useEffect hook for synchronizing components with external systems, connecting to networks/APIs, setting up subscriptions, and handling cleanup to prevent memory leaks.
+
+[You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect): LLM should read this page when optimizing React applications or finding alternatives to useEffect. This page identifies common anti-patterns with useEffect and provides better alternatives, including calculating values during rendering, resetting state in event handlers, and updating parent component state without effects.
+
+[Lifecycle of Reactive Effects](https://react.dev/learn/lifecycle-of-reactive-effects): LLM should read this page when understanding effect dependencies or troubleshooting effect behavior. This page explains the complete lifecycle of React effects, including dependency arrays, effect synchronization, cleaning up before re-running, and controlling when effects run with proper dependencies.
+
+[Separating Events from Effects](https://react.dev/learn/separating-events-from-effects): LLM should read this page when distinguishing between event logic and synchronization code or handling mixed concerns. This page explains how to separate event-triggered logic from synchronization effects, implementing event-specific state updates, and combining events with effects appropriately.
+
+[Removing Effect Dependencies](https://react.dev/learn/removing-effect-dependencies): LLM should read this page when optimizing effect dependencies or preventing unnecessary effect reruns. This page provides techniques for removing unnecessary dependencies from useEffect, including moving non-reactive code outside effects, adjusting dependency declarations, and using functional updates.
+
+[Reusing Logic with Custom Hooks](https://react.dev/learn/reusing-logic-with-custom-hooks): LLM should read this page when extracting reusable logic from components or creating shared behavior across components. This page explains how to create custom hooks, naming conventions, passing reactive values between hooks, sharing stateful logic, and implementing custom hooks for common patterns like data fetching and animations.
+
+## React API Reference
+
+[Hooks](https://react.dev/reference/react/hooks): LLM should read this page when needing a comprehensive overview of all React hooks or determining which hook to use for specific scenarios. This page provides a complete reference of all built-in React hooks including state hooks (useState, useReducer), context hooks (useContext), ref hooks (useRef, useImperativeHandle), and effect hooks (useEffect, useLayoutEffect), with guidance on usage patterns.
+
+[useCallback](https://react.dev/reference/react/useCallback): LLM should read this page when optimizing component renders or memoizing functions in React. This page explains how to use the useCallback hook to memoize function definitions between renders, preventing unnecessary re-renders of child components that receive functions as props, with examples of proper dependency arrays.
+
+[useContext](https://react.dev/reference/react/useContext): LLM should read this page when consuming context values or implementing global state in React applications. This page provides detailed documentation on the useContext hook for accessing context values from provider components, including usage patterns, performance considerations, and combining multiple contexts.
+
+[useEffect](https://react.dev/reference/react/useEffect): LLM should read this page when implementing side effects in React components or connecting to external systems. This page provides complete reference documentation for the useEffect hook, including dependency array patterns, cleanup function implementation, and guidelines for synchronizing with non-React systems.
+
+[useMemo](https://react.dev/reference/react/useMemo): LLM should read this page when optimizing expensive calculations or preventing unnecessary computations in React. This page explains how to use useMemo for memoizing computed values across renders, skipping expensive recalculations when dependencies haven't changed, and properly defining dependency arrays.
+
+[useReducer](https://react.dev/reference/react/useReducer): LLM should read this page when implementing complex state logic or managing related state transitions. This page covers the useReducer hook for state management, including defining reducer functions, handling actions, initializing state, and lazy initialization patterns.
+
+[useRef](https://react.dev/reference/react/useRef): LLM should read this page when working with persisted mutable values or accessing DOM elements directly. This page provides comprehensive documentation on the useRef hook, including use cases for storing persistent values, DOM element references, and common patterns like forwarding refs.
+
+[useState](https://react.dev/reference/react/useState): LLM should read this page when implementing stateful components or managing component-specific data. This page offers detailed reference for the useState hook, covering state initialization, lazy initial state, state updates, batching behavior, and functional updates.
+
+[Components](https://react.dev/reference/react/components): LLM should read this page when working with React's built-in components or specialized component types. This page documents React's built-in components like Fragment, StrictMode, Suspense, and Profiler, including their purpose, usage patterns, props, and common implementation scenarios.
+
+[Fragment](https://react.dev/reference/react/Fragment): LLM should read this page when returning multiple elements from a component or avoiding unnecessary wrapper nodes. This page explains React Fragment (<> </> or <Fragment>) for grouping elements without adding extra nodes to the DOM, with examples and special cases like using keys.
+
+[Suspense](https://react.dev/reference/react/Suspense): LLM should read this page when implementing code splitting or handling asynchronous component loading. This page explains the Suspense component for managing loading states during data fetching or code loading, including fallback UI, and coordination with React.lazy for code splitting.
+
+[APIs](https://react.dev/reference/react/apis): LLM should read this page when using React's utility functions or specialized APIs beyond components and hooks. This page covers React's utility APIs including createContext, memo, lazy, and other functions that enhance React applications with additional capabilities for optimization, code splitting, and context creation.
+
+[createContext](https://react.dev/reference/react/createContext): LLM should read this page when implementing context-based state sharing or creating global state systems. This page provides detailed documentation on creating context with default values, providing context through providers, and consuming context with useContext, including nesting and updating patterns.
+
+[lazy](https://react.dev/reference/react/lazy): LLM should read this page when implementing code splitting or optimizing bundle size in React applications. This page explains React.lazy for dynamic imports of components, enabling code splitting, and working with Suspense for loading states during component fetching.
+
+[memo](https://react.dev/reference/react/memo): LLM should read this page when optimizing component renders or preventing unnecessary re-renders. This page covers React.memo for skipping renders when props haven't changed, implementing custom comparison functions, and understanding when to use memoization for performance optimization.
+
+## React DOM
+
+[Hooks](https://react.dev/reference/react-dom/hooks): LLM should read this page when working with DOM-specific React hooks or form interactions. This page documents React DOM's specialized hooks like useFormStatus that provide DOM-specific functionality beyond React's core hooks.
+
+[useFormStatus](https://react.dev/reference/react-dom/hooks/useFormStatus): LLM should read this page when implementing forms with pending submission states or providing feedback during form submissions. This page explains the useFormStatus hook for accessing form submission state (pending, error states) and implementing loading indicators during form submissions.
+
+[Components](https://react.dev/reference/react-dom/components): LLM should read this page when working with DOM elements in React or implementing form controls. This page provides reference documentation for all HTML components available in React DOM, including special props and behavior for elements like form, input, select, and other HTML elements.
+
+[form](https://react.dev/reference/react-dom/components/form): LLM should read this page when implementing forms in React or handling form submissions. This page explains React's enhanced form component, including the action prop for form submission handling, form validation, and integration with form-specific hooks.
+
+[input](https://react.dev/reference/react-dom/components/input): LLM should read this page when implementing form controls or handling user input in React. This page documents the React-specific behavior of input elements, including controlled vs. uncontrolled patterns, event handling, and special considerations for different input types.
+
+[select](https://react.dev/reference/react-dom/components/select): LLM should read this page when implementing dropdown selections or multi-select interfaces in React. This page covers React's select component, including single and multiple selection patterns, controlled component implementation, and event handling for selection changes.
+
+[textarea](https://react.dev/reference/react-dom/components/textarea): LLM should read this page when implementing multi-line text inputs or resizable text areas in React. This page explains React's textarea implementation, including controlled component patterns, handling text changes, and managing text area dimensions.
+
+[APIs](https://react.dev/reference/react-dom): LLM should read this page when utilizing React DOM-specific functions or portal creation. This page covers React DOM's specialized APIs including createPortal, flushSync, and preload/prefetch functions for resource optimization.
+
+[createPortal](https://react.dev/reference/react-dom/createPortal): LLM should read this page when rendering elements outside their parent DOM hierarchy or implementing modals and tooltips. This page explains how to use createPortal to render children into a different part of the DOM tree while maintaining React context and event bubbling.
+
+[flushSync](https://react.dev/reference/react-dom/flushSync): LLM should read this page when forcing synchronous DOM updates or managing state updates with DOM measurements. This page documents the flushSync function for forcing React to flush pending updates to the DOM synchronously, including use cases and performance implications.
+
+[Client APIs](https://react.dev/reference/react-dom/client): LLM should read this page when rendering React in browsers or hydrating server-rendered content. This page documents client-side React DOM APIs including createRoot and hydrateRoot for mounting React applications in browser environments.
+
+[createRoot](https://react.dev/reference/react-dom/client/createRoot): LLM should read this page when initializing React applications in the browser or replacing older ReactDOM.render calls. This page explains how to create a root for rendering React components into a DOM container, including configuration options and cleanup.
+
+[hydrateRoot](https://react.dev/reference/react-dom/client/hydrateRoot): LLM should read this page when working with server-rendered applications or implementing server-side rendering. This page covers hydrating server-generated HTML with React to create interactive applications, including handling hydration errors and suppression techniques.
+
+[Server APIs](https://react.dev/reference/react-dom/server): LLM should read this page when implementing server-side rendering or generating HTML from React components. This page covers server-side rendering APIs including renderToString, renderToPipeableStream, and other methods for generating HTML on the server.
+
+## Rules of React
+
+[Overview](https://react.dev/reference/rules): LLM should read this page when learning about React's fundamental constraints or understanding React's core principles. This page provides an overview of React's essential rules that ensure components work correctly within React's rendering system.
+
+[Components and Hooks must be pure](https://react.dev/reference/rules/components-and-hooks-must-be-pure): LLM should read this page when debugging unexpected component behavior or understanding rendering requirements. This page explains why React components and hooks must be pure functions, avoiding side effects during rendering, and ensuring predictable output based on inputs.
+
+[React calls Components and Hooks](https://react.dev/reference/rules/react-calls-components-and-hooks): LLM should read this page when understanding React's control flow or component execution patterns. This page clarifies that React components and hooks should only be called by React itself, not directly by application code, explaining the rendering process and component lifecycle.
+
+[Rules of Hooks](https://react.dev/reference/rules/rules-of-hooks): LLM should read this page when working with React hooks or troubleshooting hook-related errors. This page outlines critical rules for using hooks including calling hooks only at the top level of components (not in conditions or loops), only calling hooks from React functions, and maintaining consistent hook order across renders.
+
+## Server Components
+
+[Server Components](https://react.dev/reference/rsc/server-components): LLM should read this page when implementing React Server Components or understanding modern React rendering patterns. This page explains React Server Components that run only on the server, providing data access without client-side code, reduced bundle sizes, and automatic code splitting.
+
+[Server Functions](https://react.dev/reference/rsc/server-functions): LLM should read this page when implementing server-client interaction or handling form submissions with React. This page documents server functions in React that allow client components to call server-side code directly, handling data mutations, form submissions, and authenticated operations.
+
+[Directives](https://react.dev/reference/rsc/directives): LLM should read this page when working with React Server Components directives or differentiating client/server code. This page covers React's directives for server components including 'use client' and 'use server' that control where components and functions execute.
+
+## Legacy React APIs
+
+[Legacy React APIs](https://react.dev/reference/react/legacy): LLM should read this page when maintaining older React codebases or understanding deprecated patterns. This page documents legacy React APIs including class components, createRef, createElement, and other older patterns that have been superseded by hooks and functional components.
+
+[Component](https://react.dev/reference/react/Component): LLM should read this page when working with class components or migrating legacy code to hooks. This page provides detailed documentation on React.Component for class-based components, including lifecycle methods, state management, and context usage in the class component paradigm.
+
+[PureComponent](https://react.dev/reference/react/PureComponent): LLM should read this page when optimizing class component renders or preventing unnecessary updates. This page explains React.PureComponent which implements a shallow prop and state comparison in shouldComponentUpdate for automatic performance optimization in class components.
+
+[createElement](https://react.dev/reference/react/createElement): LLM should read this page when using JSX alternatives or understanding React's underlying API. This page documents the createElement API that underlies JSX, showing how to create React elements programmatically by specifying type, props, and children.
